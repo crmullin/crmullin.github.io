@@ -1,0 +1,27 @@
+body{
+	background-color: lightblue;
+	color: white;
+}
+
+#square1{
+	background-color: blue;
+}
+
+#square1:hover{
+	cursor: pointer;
+}
+
+#square2{
+	background-color: orange;
+}
+
+#wrapper{
+	margin:auto;
+	width: 200px;
+}
+
+.square{
+	width: 100px;
+	height: 100px;
+	float: left;
+}
