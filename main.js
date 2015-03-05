@@ -1,3 +1,4 @@
-function submitPoem() {
-	document.getElementById("poem").innerHTML = "Poem Submitted.";
+function songFunction() {
+	var x = document.getElementById("song1").innerHTML;
+	document.getElementById("songPlayLoc").innerHTML = x;
 }

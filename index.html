@@ -20,17 +20,18 @@
 		<br>
 		<div>
 			<audio controls>
-				<source src="static/RiverFlowsInYou.mp3" type="audio/mpeg">
+				<source src="static/RiverFlowsInYou.mp3" id="song1" type="audio/mpeg">
 			</audio>
 		</div>
 		<br>
 		<br>
 		<br>
 		<br>
-		<form action="poeticnotes.me" method="POST">
 			<p class="poem_header"> Insert Poem Here </p>
 			<textarea class="mypoem" placeholder="Insert Poem Here:"></textarea>
-			<input type="button" onclick="">
-		</form>
+			<button type="button" onclick="songFunction()">Submit</button>
+		<br>
+		<br>
+			<p id="songPlayLoc"></p>
 	</body>
 </html>
