@@ -21,6 +21,9 @@ def text_sentiment():
 	  params={
 	    "text": "I am not really happy"
 	  }
+	"pos_percent" = pos_percent
+	if pos_percent >= 50:
+		print ("good")
 	)
 if __name__ == '__main__':
 	app.run()
