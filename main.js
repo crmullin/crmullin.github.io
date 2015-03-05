@@ -1,4 +1,4 @@
 function songFunction() {
-	var x = document.getElementById("song1").innerHTML;
+	var x = document.getElementsByTagName("AUDIO").innerHTML;
 	document.getElementById("songPlayLoc").innerHTML = x;
 }
