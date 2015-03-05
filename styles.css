@@ -14,6 +14,10 @@ body{
 	background-repeat: no-repeat;
 }
 
+input {
+	dislpay: block;
+}
+
 .poem_header {
 	color: #CCFFE5;
 	font-family: Tahoma, sans-serif;
