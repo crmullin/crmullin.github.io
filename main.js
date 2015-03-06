@@ -119,7 +119,7 @@ function clicked(){
 
 $(document).ready(function() {
 
-	$("#stopMusic").click(function() {
+	$("#stop").click(function() {
 		T("mml").stop();
 	});
 
