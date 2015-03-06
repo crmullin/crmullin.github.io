@@ -9,12 +9,6 @@
 			*/
 var audioElement = document.createElement('audio');
 audioElement.setAttribute('src', 'static/Happy.mp3');
-audioElement.load();
-audioElement.addEventListener("load", function() { 
-  audioElement.pause(); 
-  $(".duration span").html(audioElement.duration);
-  $(".filename span").html(audioElement.src);
-}, true);
 
 function clicked(){
 
