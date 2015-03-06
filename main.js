@@ -7,6 +7,14 @@
 			"Accept": "application/json; charset=utf-8",
 			"Content-Type": "application/x-www-form-urlencoded",
 			*/
+var audioElement = document.createElement('Happy');
+audioElement.setAttribute('src', 'Happy.mp3');
+audioElement.load()
+audioElement.addEventListener("load", function() { 
+  audioElement.pause(); 
+  $(".duration span").html(audioElement.duration);
+  $(".filename span").html(audioElement.src);
+}, true);
 
 function clicked(){
 
@@ -109,7 +117,8 @@ function clicked(){
 			}).set({buddies:synth}).start();    */
 		}
 		else {
-			document.getElementById('Happy').play();
+			audioElement.currentTime=8;
+			audioElement.play();
 		} 
 
 //Thanks to mohayanao.github.io/timbre.js for their source code! This is REALLY cool!
