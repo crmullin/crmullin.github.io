@@ -17,7 +17,7 @@ function clicked(){
 		url:"https://text-sentiment.p.mashape.com/analyze",
 		type:"POST",
 		headers: {
-			"X-Mashape-Key": "a6VxOx7M3Amshij6uyj84fTrVHmjp1TSOldjsnWL91sN5PtGUV"
+			"X-Mashape-Key": "Pr3tNC8L1SmshEoa0dB0tGt01sESp13swn9jsnK2g0yqnrQFkY"
 		},
 		sentimentVal: {text: poem},
 		dataType:"json"
