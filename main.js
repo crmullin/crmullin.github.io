@@ -120,7 +120,7 @@ function clicked(){
 $(document).ready(function() {
 
 	$("#stop").click(function() {
-		T("mml").stop();
+		this.pause();
 	});
 
 	$("#submit").click(function() {
