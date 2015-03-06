@@ -19,7 +19,7 @@ function clicked(){
 		headers: {
 			"X-Mashape-Key": "Pr3tNC8L1SmshEoa0dB0tGt01sESp13swn9jsnK2g0yqnrQFkY"
 		},
-		sentimentVal: {text: poem},
+		data: {text: poem},
 		dataType:"json"
 	}).done(function(sentimentVal) {
 		console.log("Response:");
@@ -29,7 +29,7 @@ function clicked(){
 		var positive = sentimentVal.pos;
 		var middle = sentimentVal.mid;
 
-		/*if (positive > negative) {
+		if (positive > negative) {
 			var pattern = new sc.Pshuf(sc.series(12), Infinity);
 			var scale   = new sc.Scale.major();
 			var chords  = [
@@ -61,7 +61,6 @@ function clicked(){
 		else {
 			$("body").css("background", "orange");
 		} 
-		*/
 
 //Thanks to mohayanao.github.io/timbre.js for their source code! This is REALLY cool!
 
