@@ -6,6 +6,7 @@
 function clicked(){
 
 	var poem = $("#mypoem").val();
+	console.log(poem);
 
 	$.ajax({
 		url:"https://text-sentiment.p.mashape.com/analyze",
