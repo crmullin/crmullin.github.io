@@ -109,7 +109,7 @@ function clicked(){
 			}).set({buddies:synth}).start();    */
 		}
 		else {
-			$("body").css("background", "orange");
+			document.getElementById('Happy').play();
 		} 
 
 //Thanks to mohayanao.github.io/timbre.js for their source code! This is REALLY cool!
