@@ -5,7 +5,7 @@
 
 function clicked(){
 
-	var poem = $("#submit").val();
+	var poem = $("#mypoem").val();
 	console.log(poem);
 
 	$.ajax({
