@@ -6,6 +6,7 @@
 function clicked(){
 
 	var poem = $("#submit").val();
+	console.log(poem);
 
 	$.ajax({
 		url:"https://text-sentiment.p.mashape.com/analyze",
@@ -18,10 +19,11 @@ function clicked(){
 		data: {text: poem},
 		dataType:"json"
 	}).done(function(data) {
+		console.log("Response:");
 		console.log(data);
 	});
 }
 
 $(document).ready(function() {
-	$("#submit").onClick(clicked());
+	$("#submit").click(clicked());
 });
