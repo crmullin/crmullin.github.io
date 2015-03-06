@@ -25,5 +25,7 @@ function clicked(){
 }
 
 $(document).ready(function() {
-	$("#submit").click(clicked());
+	$("#submit").click(function() {
+		clicked();
+	});
 });
