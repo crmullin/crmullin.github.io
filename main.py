@@ -1,7 +1,4 @@
-$ pip install unirest
 import unirest
-$ pip install Flask
-$ python hello.py
 
 from flask import Flask, render_template
 app = Flask(__name__)
