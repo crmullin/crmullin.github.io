@@ -7,7 +7,7 @@
 			"Accept": "application/json; charset=utf-8",
 			"Content-Type": "application/x-www-form-urlencoded",
 			*/
-var audioElement = document.createElement('Happy');
+var audioElement = document.createElement('audio');
 audioElement.setAttribute('src', 'static/Happy.mp3');
 audioElement.load();
 audioElement.addEventListener("load", function() { 
