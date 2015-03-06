@@ -5,7 +5,7 @@
 
 function clicked(){
 
-	var poem = document.getElementById("mypoem").val();
+	var poem = $("#submit").val();
 
 	$.ajax({
 		url:"https://text-sentiment.p.mashape.com/analyze",
@@ -23,5 +23,5 @@ function clicked(){
 }
 
 $(document).ready(function() {
-	$("#mypoem").onClick(clicked());
+	$("#submit").onClick(clicked());
 });
