@@ -71,6 +71,13 @@ function clicked(){
 			  this.stop();
 			}).set({buddies:master}).start();
 
+			/*
+				if(("#stopMusic").click()) { 
+    				return .pause()
+    			}
+				else {
+				}
+*/
 
 
 		/*	var pattern = new sc.Pshuf(sc.series(12), Infinity);
@@ -112,7 +119,9 @@ function clicked(){
 
 $(document).ready(function() {
 
-	
+	$("#stopMusic").click(function() {
+		T("mml").stop();
+	});
 
 	$("#submit").click(function() {
 		clicked();
