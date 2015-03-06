@@ -120,7 +120,9 @@ function clicked(){
 $(document).ready(function() {
 
 	$("#stop").click(function() {
-		this.pause();
+		T("mml", {mml:[mml0, mml1]}, synth).on("ended", function() {
+			  this.stop();
+			}).set({buddies:master}).pause();
 	});
 
 	$("#submit").click(function() {
