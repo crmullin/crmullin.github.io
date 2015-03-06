@@ -3,6 +3,11 @@
 	//document.getElementById("songPlayLoc").innerHTML = x;
 //}
 
+/*
+			"Accept": "application/json; charset=utf-8",
+			"Content-Type": "application/x-www-form-urlencoded",
+			*/
+
 function clicked(){
 
 	var poem = $("#mypoem").val();
@@ -12,8 +17,6 @@ function clicked(){
 		url:"https://text-sentiment.p.mashape.com/analyze",
 		type:"POST",
 		headers: {
-			"Accept": "application/json; charset=utf-8",
-			"Content-Type": "application/x-www-form-urlencoded",
 			"X-Mashape-Key": "a6VxOx7M3Amshij6uyj84fTrVHmjp1TSOldjsnWL91sN5PtGUV"
 		},
 		sentimentVal: {text: poem},
