@@ -8,8 +8,8 @@
 			"Content-Type": "application/x-www-form-urlencoded",
 			*/
 var audioElement = document.createElement('Happy');
-audioElement.setAttribute('src', 'Happy.mp3');
-audioElement.load()
+audioElement.setAttribute('src', 'static/Happy.mp3');
+audioElement.load();
 audioElement.addEventListener("load", function() { 
   audioElement.pause(); 
   $(".duration span").html(audioElement.duration);
