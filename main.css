@@ -95,6 +95,12 @@ body {
   line-height: 1;
   letter-spacing: -1px;
 }
+/* About and Contact pages formatting
+-------------------------- */
+.starter-template {
+  padding: 100px 15px;
+  text-align: center;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
