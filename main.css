@@ -66,15 +66,19 @@ body {
 
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
-  margin-bottom: 20px;
+  margin-bottom: auto;
   text-align: center;
+}
+.col-centered {
+    float: none;
+    margin: 0 auto;
 }
 .marketing h2 {
   font-weight: normal;
 }
 .marketing .col-lg-4 p {
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 

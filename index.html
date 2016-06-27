@@ -1,37 +1,41 @@
+<!-- Cleaned up bootstrap template code by Michele W. 2016 -->
+<!-- This is a comment (for reference) -->
+<!-- The following line tells the browser that the code in this file should be read as html-->
 <!DOCTYPE html>
 <html lang="en">
+  <!-- The following is just setup for the boostrap (html library for easy coding) template for this web page, you shouldn't need to change this -->
   <head>
+    <!-- =========================================================================== -->
+    <!-- Don't change these three lines -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- ========================================================================== -->
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="bootstrap-3.3.6/docs/favicon.ico">
+    <!-- Any href call means it's referencing a file; in this case the favicon.ico file that is within the docs folder that is within the bootstrap-3.3.6 folder -->
 
     <title>Caitlin Mullin</title>
+    <!-- This is the title of the web page (that displays in the tab in the browser) -->
 
     <!-- Bootstrap core CSS -->
+    <!-- This is the bootstrap reference stylesheet for the styles (css) within this template, referenced by the filepath in href -->
     <link href="bootstrap-3.3.6/docs/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- This is a bug fix for the template that is references by the filepath in href (the bug only happens in Internet Explorer 10 so you don't have to worry about anything) -->
     <link href="bootstrap-3.3.6/docs/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <!--<script src="../../Documents/bootstrap-3.3.6/docs/assets/js/ie-emulation-modes-warning.js"></script>-->
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
     <!-- Custom styles for this template -->
+    <!-- This is referencing the css file for this web page (main.css) -->
     <link href="main.css" rel="stylesheet">
   </head>
 <!-- NAVBAR
 ================================================== -->
+<!-- The navbar is the black bar at the top that says "Caitlin MUllin, Home, About, Contact" -->
+
   <body>
     <div class="navbar-wrapper">
       <div class="container">
@@ -51,8 +55,14 @@
               <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="#contact.html">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <!-- The two lines above with "About" and "Contact" allow for the webpage to reference about.html and contact.html (call new web pages) when the links are clicked in the navbar -->
+                <!-- "Home" is the page denoted and designed by the index.html file -->
 
+
+<!-- The commented out part is a dropbox menu to the right of "Contacts" that would allow you to reference more pages -->
+<!-- You don't need it right now, but I'll leave this commented out in case you want to play with it (uncomment it and check out how the page looks) or use it later -->
+<!-- It works similarly to how the navbar is setup (in regards to href) -->
 <!--
 
                 <li class="dropdown">
@@ -77,35 +87,49 @@
 
       </div>
     </div>
+    <!-- These end the calls (make a boundary around the navbar calls above) and thus mark the end of the navbar on the page -->
 
 
     <!-- Carousel
     ================================================== -->
+    <!-- This is the part of the website with the large top image background -->
+    <!-- Carousel allows the background image to be part of a sliding image display with arrows on either side -->
+    <!-- I'm leaving the code commented out in case you'd like to use it later -->
+
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- This makes the myCarousel div with the id -->
+
       <!-- Indicators -->
       <ol class="carousel-indicators">
       <!--  <li data-target="#myCarousel" data-slide-to="0" class="active"></li> -->
 
-  <!--
+      <!-- These make the references to change the slide -->
+      <!--
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
       -->
 
       </ol>
+      <!-- This just ends the previous "carousel-indicators" class -->
 
       <div class="carousel-inner" role="listbox">
         <div class="item active">
           <img class="first-slide" src="assets/3Dpenguins.jpg" alt="First slide">
+          <!-- This is the first slide that is currently active -->
+          <!-- Putting the filepath of the image you want to display after src="" shows the image -->
           <div class="container">
             <div class="carousel-caption">
               <h1>Caitlin Mullin.</h1>
               <p>Caitlin Mullin is a postdoctorial candidate at the Oliva Lab in CSAIL, MIT.</p>
+              <!-- This is for the words on top of the first carousel slide -->
+              <!-- The h1 is for the heading text, and p is for the paragraph text underneath -->
             </div>
           </div>
         </div>
 
-<!--
-
+        <!-- These are the commented out second and third slides -->
+        <!-- You can uncomment them and there'll be two more slides for you to fill in -->
+        <!--
         <div class="item">
           <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
           <div class="container">
@@ -126,11 +150,13 @@
             </div>
           </div>
         </div>
-
--->
+        -->
       </div>
 
-<!--
+
+      <!-- These are the left and right arrow buttons that would allow you to click through the slides -->
+      <!-- They're commented out because right now you have just one slide, but are useful if you decide to add more slides after -->
+      <!--
       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
@@ -139,9 +165,10 @@
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
--->
+      -->
 
     </div><!-- /.carousel -->
+    <!-- This marks the end of the carousel in the webpage -->
 
 
     <!-- Marketing messaging and featurettes
@@ -149,18 +176,21 @@
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
     <div class="container marketing">
+    <!-- This makes a container (something in html that makes organization and formatting easier) for the following commented-out-three-circle-info formats-->
 
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+      <!-- Three circles of images below the carousel -->
+      <!-- Two are commented out because I thought the featurette (large square box) was better for demonstrating your datasets, but feel free to uncomment and use these as well! -->
+      
+      <div class="row" display="block">
+        <!-- The "col-centered" that is added after "col-lg-4" makes this column size centered in the row-->
+        <div class="col-lg-4 col-centered">
+          <!-- You can change your "about" picture by changing the image address at "src" below -->
+          <img class="img-circle" src="http://www.cutenessoverflow.com/wp-content/uploads/2014/02/Little-Cute-Puppy-1600x1200.jpg" alt="BioImage" width="200" height="200">
           <h2>About</h2>
-          <p>Biographical/professional info goes here!</p>
-          <p><a class="btn btn-default" href="about.html" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-
-<!--
-
+          <p>Read all about me here!</p>
+          <p><a class="btn btn-default" href="about.html" role="button">Read about me! &raquo;</a></p>
+        </div>
+      <!--
         <div class="col-lg-4">
           <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
           <h2>Heading</h2>
@@ -173,8 +203,7 @@
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
-
--->
+      -->
       </div>
 
 
@@ -182,6 +211,8 @@
 
       <hr class="featurette-divider">
 
+      <!-- This is the 500 by 500 box  image with words to the left of it -->
+      <!-- Right now it has intro info on your memorability experiment dataset, but it can have whatever info you want -->
       <div class="row featurette">
         <div class="col-md-7">
           <h2 class="featurette-heading">Memorability Experiment. <span class="text-muted">Psytoolkit Experiment Dataset.</span></h2>
@@ -189,11 +220,13 @@
         </div>
         <div class="col-md-5">
           <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <!-- The filepath to the image you want to display would be put into data-src-"" -->
         </div>
       </div>
 
-<!--
-
+      <!-- These are the other two boxes that are commented out -->
+      <!-- Feel free to uncomment and use them! -->
+      <!--
       <hr class="featurette-divider">
 
       <div class="row featurette">
@@ -219,13 +252,13 @@
       </div>
 
       <hr class="featurette-divider">
-
--->
+      -->
 
       <!-- /END THE FEATURETTES -->
 
 
       <!-- FOOTER -->
+      <!-- This includes the "Back to top" link on the bottom right of the page, and the Copyright info, Privacy, and Terms links on the bottom left -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
         <p>&copy; 2015 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
@@ -236,13 +269,19 @@
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
+    <!-- Don't need to change most of this (except the placeholder images script further down below) -->
+
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="bootstrap-3.3.6/docs/assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="bootstrap-3.3.6/docs/dist/js/bootstrap.min.js"></script>
-    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <!-- ======================================================================== -->
+    <!-- Just to make the placeholder images work. When you replace the images with your own, get rid of the following line -->
     <script src="bootstrap-3.3.6/docs/assets/js/vendor/holder.min.js"></script>
+    <!-- ======================================================================== -->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="bootstrap-3.3.6/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
+<!-- The </html> tag means the page is done. Anything below that tag won't be read - even if it's written in html format -->
+<!-- And that's it! -->
