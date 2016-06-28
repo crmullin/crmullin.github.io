@@ -98,19 +98,14 @@ body {
 /* About and Contact pages formatting
 -------------------------- */
 .starter-template {
-  padding: 100px 15px;
+  padding: 100px 300px 50px 50px;
   text-align: center;
-}
-.module {
-  margin: 10px;
-  float: none;
-  background-size: cover;
-  position: relative;
 }
 .bg {
   background: url(assets/bike.jpg) no-repeat center center;
-  background-size: 40%;
+  background-size: 30%;
   background-position: right center;
+  margin-top: 50px
 }
 
 
