@@ -101,6 +101,18 @@ body {
   padding: 100px 15px;
   text-align: center;
 }
+.module {
+  margin: 10px;
+  float: none;
+  background-size: cover;
+  position: relative;
+}
+.bg {
+  background: url(assets/bike.jpg) no-repeat center center;
+  background-size: 40%
+  background-position: right center;
+}
+
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
