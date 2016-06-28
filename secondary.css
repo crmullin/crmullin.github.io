@@ -1,6 +1,12 @@
 body {
   padding-top: 50px;
 }
+.contactbox .container{
+  float: left;
+  background: url(assets/bike.jpg);
+  background-size: cover;
+  position: relative;
+}
 .starter-template {
   padding: 40px 15px;
   text-align: center;
@@ -16,3 +22,4 @@ body {
 .navbar-wrapper .navbar .container {
   width: auto;
 }
+
