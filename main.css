@@ -109,7 +109,7 @@ body {
 }
 .bg {
   background: url(assets/bike.jpg) no-repeat center center;
-  background-size: 40%
+  background-size: 40%;
   background-position: right center;
 }
 
