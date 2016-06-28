@@ -103,9 +103,10 @@ body {
 }
 .bg {
   background: url(assets/bike.jpg) no-repeat center center;
-  background-size: 30%;
+  background-size: 40%;
   background-position: right center;
-  margin-top: 50px
+  margin-top: 50px;
+  margin-bottom: 0px;
 }
 
 
